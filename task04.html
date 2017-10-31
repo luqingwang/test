@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>登录页面</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		list-style: none;
+	}
+	a{
+		text-decoration: none;
+		color: #f3f4f6;
+	}
+	body{
+		background-color: #eff0f4;
+	}
+	.login{
+		font-size: 32px;
+	}
+	.login .login_nav{
+		position: relative;
+		top: 0;
+		left: 0;
+		height: 88px;
+		background-color: #5fc0cd;
+		margin: 0 auto;
+		line-height: 88px;
+	}
+	.login .login_nav ul li{
+		width: 33.3%;
+	}
+	.login .login_nav ul .login_nav_close{
+		position: absolute;
+		top: 0;
+		left: 4%;
+	}
+	.login .login_nav ul .login_nav_login{
+		position: absolute;
+		top: 0;
+		left: 50%;
+		margin-left: -16.6%;
+		font-size: 36px;
+		text-align: center;
+	}
+	.login .login_nav ul .login_nav_register{
+		position: absolute;
+		top: 0;
+		right: 4%;
+		text-align: right;
+	}
+	.login_putin input{
+		background-color: #fff;
+		width: 100%;
+		border-style: none;
+		border-left: 2px solid #ccc;		
+		line-height: 54px;
+	}
+	.login_putin input[placeholder]{
+		font-size: 32px;
+	}
+	input::-webkit-input-placeholder {
+	  color: #e1e5e7;
+	}
+	input:-moz-placeholder {
+	  color: #e1e5e7;
+	}
+	input::-moz-placeholder {
+	  color: #e1e5e7;
+	}
+	input::-ms-input-placeholder {
+	  color: #e1e5e7;
+	}
+	.login_putin .login_putin_text{
+		background-image: url(D:test/test/images/icon_phone.png);
+		background-position:43px center; 
+	}
+	.login_putin .login_putin_pwd{
+		background-image: url(D:test/test/images/icon_locked.png);
+	}
+
+	.login_putin .login_putin_text,.login_putin_pwd{
+		background-repeat: no-repeat;
+		background-position: 43px center;
+		background-color: #fff;	
+		padding: 25px 0 25px 116px;
+		height: 54px;
+		margin: 16px auto;
+	}
+	.login .login_btn button{
+		background-color: #5fc0cd;
+		border: none;
+		width: 100%;
+		height: 102px;
+		font-size: 36px;
+		margin: 10px auto;
+	}
+	p a{
+		color: #5fc0cd;
+		font-size: 32px;
+	}
+	p{
+		float: right;
+		padding-right: 20px;
+	}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<div class="login_nav">
+			<ul>
+				<li class="login_nav_close"><a href="">关闭</a></li>
+				<li class="login_nav_login"><a href="">登陆</a></li>
+				<li class="login_nav_register"><a href="">注册</a></li>
+			</ul>
+		</div>
+		<div class="login_putin">
+			<ul>
+				<li class="login_putin_text"><input type="text" placeholder="请输入手机号"/></li>
+				<li class="login_putin_pwd"><input type="password" placeholder="请输入密码"/></li>
+			</ul>
+		</div>
+		<div class="login_btn">
+			<button type="submit"><a href="">登 陆</a></button>
+		</div>
+		<p><a href="">忘记密码？</a></p>
+	</div>
+</body>
+</html>
